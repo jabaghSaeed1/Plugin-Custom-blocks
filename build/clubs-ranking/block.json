@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/clubs-ranking",
+  "version": "0.1.0",
+  "title": "Clubs Ranking",
+  "category": "widgets",
+  "icon": "list-view",
+  "description": "Live football standings table from API-Sports.",
+  "attributes": {
+    "leagueId": {
+      "type": "string",
+      "default": "39"
+    }
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "background": true,
+      "text": true
+    }
+  },
+  "textdomain": "clubs-ranking",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

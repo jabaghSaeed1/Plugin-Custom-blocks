@@ -1,0 +1,93 @@
+.wp-block-create-block-clubs-ranking {
+    border-radius: 12px;
+    font-family: 'Manrope', sans-serif;
+    color: #333639;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; // Keeps the shadow/border from clipping
+
+    /* 1. The Scroll Container */
+    /* This allows the table to slide left/right on small phones */
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+
+    .ranking-table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 500px; // Prevents the table from squashing too small
+
+        th {
+            text-align: left;
+            font-size: 14px;
+            color: #888;
+            text-transform: uppercase;
+            padding: 12px 8px;
+            border-bottom: 1px solid rgba(0,0,0,0.08); 
+        }
+
+        td {
+            padding: 12px 8px;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(0,0,0,0.05); 
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .col-club {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            /* Ensure the club name doesn't wrap to a second line */
+            white-space: nowrap; 
+
+            .rank-number { 
+                font-weight: 800; 
+                color: #aaa; 
+                width: 20px; 
+                flex-shrink: 0;
+            }
+
+            .team-logo { 
+                width: 24px; 
+                height: 24px; 
+                object-fit: contain;
+                display: block;
+                flex-shrink: 0;
+            }
+
+            .team-name { 
+                font-weight: 700; 
+            }
+        }
+
+        .col-stat {
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            width: 40px; // Keeps stat columns consistent
+        }
+    }
+
+    /* 2. Mobile Specific Adjustments */
+    @media (max-width: 600px) {
+        .ranking-table {
+            th, td {
+                padding: 10px 4px; // Tighter padding on mobile
+                font-size: 12px;   // Slightly smaller text
+            }
+
+            .col-club {
+                gap: 8px;
+                .rank-number { width: 15px; }
+                .team-logo { width: 20px; height: 20px; }
+            }
+
+            /* Optional: Hide less important columns on mobile to save space */
+            .hide-mobile {
+                display: none;
+            }
+        }
+    }
+}

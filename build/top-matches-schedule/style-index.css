@@ -1,0 +1,137 @@
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/top-matches-schedule/style.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+.match-schedule-slider-wrapper {
+  background: #ebeef3;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.match-schedule-slider-wrapper .slick-prev:before, .match-schedule-slider-wrapper .slick-next:before {
+  display: none;
+}
+.match-schedule-slider-wrapper {
+  /* Header Styling */
+}
+.match-schedule-slider-wrapper .schedule-header {
+  margin-bottom: 25px;
+}
+.match-schedule-slider-wrapper .schedule-header .schedule-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+.match-schedule-slider-wrapper .schedule-header .schedule-subtitle {
+  color: #888;
+  font-size: 18px;
+}
+.match-schedule-slider-wrapper {
+  /* Individual Match Row */
+}
+.match-schedule-slider-wrapper .match-row {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 12px;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  background: #f0f2f4;
+}
+.match-schedule-slider-wrapper .match-row .league-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #777;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.match-schedule-slider-wrapper .match-row .league-info .mini-logo {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.match-schedule-slider-wrapper .match-row .teams-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.match-schedule-slider-wrapper .match-row .teams-flex .team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 40%;
+}
+.match-schedule-slider-wrapper .match-row .teams-flex .team .team-logo-small {
+  width: 40px !important;
+  height: 40px !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.match-schedule-slider-wrapper .match-row .teams-flex .team .t-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+}
+.match-schedule-slider-wrapper .match-row .teams-flex .team.home {
+  justify-content: flex-end;
+  text-align: right;
+}
+.match-schedule-slider-wrapper .match-row .teams-flex .team.away {
+  justify-content: flex-start;
+  text-align: left;
+}
+.match-schedule-slider-wrapper .match-row .teams-flex .match-meta {
+  width: 20%;
+  text-align: center;
+}
+.match-schedule-slider-wrapper .match-row .teams-flex .match-meta .vs-badge {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.match-schedule-slider-wrapper .match-row .teams-flex .match-meta .match-time {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+  color: #000000;
+}
+.match-schedule-slider-wrapper {
+  /* RESPONSIVE BREAKPOINT */
+}
+@media (max-width: 600px) {
+  .match-schedule-slider-wrapper {
+    padding: 15px;
+  }
+  .match-schedule-slider-wrapper .match-row {
+    padding: 10px;
+  }
+  .match-schedule-slider-wrapper .match-row .teams-flex {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .match-schedule-slider-wrapper .match-row .teams-flex .team {
+    width: 100%;
+    justify-content: center !important;
+    text-align: center !important;
+    flex-direction: row !important;
+  }
+  .match-schedule-slider-wrapper .match-row .teams-flex .team.home {
+    order: 1;
+  }
+  .match-schedule-slider-wrapper .match-row .teams-flex .team.away {
+    order: 3;
+  }
+  .match-schedule-slider-wrapper .match-row .teams-flex .match-meta {
+    width: 100%;
+    order: 2;
+    margin: 5px 0;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

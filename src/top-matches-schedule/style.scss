@@ -1,0 +1,120 @@
+.match-schedule-slider-wrapper {
+    background: #ebeef3;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    .slick-prev:before, .slick-next:before {
+        display: none;
+    }
+    /* Header Styling */
+    .schedule-header {
+        margin-bottom: 25px;
+        .schedule-title { 
+            font-family: 'Manrope', sans-serif; 
+            font-weight: 800; 
+            // font-size: 20px; 
+            margin: 0; 
+        }
+        .schedule-subtitle { color: #888; font-size: 18px; }
+    }
+
+    /* Individual Match Row */
+    .match-row {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        margin-bottom: 12px;
+        border: 1px solid #f0f0f0;
+        border-radius: 10px;
+        background: #f0f2f4;
+
+        .league-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #777;
+            font-weight: 600;
+            margin-bottom: 10px;
+            .mini-logo { width: 16px; height: 16px; object-fit: contain; }
+        }
+
+        .teams-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .team {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 40%;
+
+                .team-logo-small { 
+                    width: 40px !important; // Forces small size
+                    height: 40px !important; 
+                    object-fit: contain; 
+                }
+                .t-name { 
+                    font-size: 16px; 
+                    font-weight: 700; 
+                    color: #222; 
+                }
+
+                &.home { justify-content: flex-end; text-align: right; }
+                &.away { justify-content: flex-start; text-align: left; }
+            }
+
+            .match-meta {
+                width: 20%;
+                text-align: center;
+                .vs-badge {
+                    display: inline-block;
+                    background: #000;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 900;
+                    padding: 2px 8px;
+                    border-radius: 4px;
+                }
+                .match-time {
+                    display: block;
+                    font-size: 12px;
+                    margin-top: 4px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    /* RESPONSIVE BREAKPOINT */
+    @media (max-width: 600px) {
+        padding: 15px; // Reduce wrapper padding on mobile
+
+        .match-row {
+            padding: 10px;
+
+            .teams-flex {
+                flex-direction: column; // Stack elements vertically
+                gap: 5px;
+
+                .team {
+                    width: 100%;
+                    justify-content: center !important;
+                    text-align: center !important;
+                    
+                    // Keep logo and name on the same line even on mobile
+                    flex-direction: row !important; 
+
+                    &.home { order: 1; }
+                    &.away { order: 3; }
+                }
+
+                .match-meta {
+                    width: 100%;
+                    order: 2;
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/top-transfers/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+.transfer-list-wrapper {
+  background: #ebeef3;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.transfer-list-wrapper .transfer-header {
+  margin-bottom: 25px;
+}
+.transfer-list-wrapper .transfer-header .title {
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+.transfer-list-wrapper {
+  /* 2-COLUMN GRID SETUP */
+}
+.transfer-list-wrapper .transfer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.transfer-list-wrapper .transfer-card {
+  background: #f0f2f4;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  transition: transform 0.2s ease;
+}
+.transfer-list-wrapper .transfer-card:hover {
+  transform: translateY(-3px);
+  border-color: #e2e8f0;
+}
+.transfer-list-wrapper .transfer-card .player-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.transfer-list-wrapper .transfer-card .player-info .player-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111;
+}
+.transfer-list-wrapper .transfer-card .player-info .transfer-date {
+  font-size: 12px;
+  color: #999;
+}
+.transfer-list-wrapper .transfer-card .movement-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+.transfer-list-wrapper .transfer-card .movement-flex .t-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+.transfer-list-wrapper .transfer-card .movement-flex .t-team .t-logo {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 4px;
+}
+.transfer-list-wrapper .transfer-card .movement-flex .t-team .t-team-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+.transfer-list-wrapper .transfer-card .movement-flex .transfer-arrow {
+  color: #000000;
+  font-size: 18px;
+}
+.transfer-list-wrapper .transfer-card .transfer-footer {
+  margin-top: 8px;
+}
+.transfer-list-wrapper .transfer-card .transfer-footer .transfer-type {
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #edf2f7;
+  padding: 2px 8px;
+  border-radius: 100px;
+  color: #4a5568;
+  font-weight: 700;
+}
+.transfer-list-wrapper {
+  /* RESPONSIVE: Switch back to 1 column on tablets and mobile */
+}
+@media (max-width: 992px) {
+  .transfer-list-wrapper .transfer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

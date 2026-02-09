@@ -1,0 +1,85 @@
+.fan-poll-container {
+    background: #f8fafc; // Match your match schedule background
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+
+    .live-badge {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%; height: 100%;
+            top: 0; left: 0;
+            background: inherit;
+            border-radius: inherit;
+            z-index: -1;
+            animation: pulse 2s infinite;
+        }
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.6; }
+        100% { transform: scale(1.5); opacity: 0; }
+    }
+
+    h3 {
+        margin: 15px 0 30px;
+        font-size: 24px;
+        font-weight: 800;
+        color: #1a1a1a;
+    }
+
+    .poll-options {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .poll-btn {
+        background: white;
+        border: 1px solid #ececec;
+        padding: 15px 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            border-color: #000000;
+            transform: translateX(5px);
+        }
+
+        .team-name { font-weight: 700; z-index: 2; color: #2d3436; }
+        .percentage { font-weight: 800; z-index: 2; color: #64748b; }
+
+        .progress-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: transparent;
+            z-index: 1;
+
+            .fill {
+                height: 100%;
+                background: #f1f5f9; // Light grey fill
+                transition: width 1s ease-in-out;
+            }
+        }
+    }
+
+}
+@media (max-width: 992px) {
+    .fan-poll-container {
+        padding: 16px;
+    }
+}

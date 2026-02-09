@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/fan-poll",
+  "version": "0.1.0",
+  "title": "Football Fan Poll",
+  "category": "widgets",
+  "icon": "chart-bar",
+  "description": "Interactive fan poll for football matches.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fan-poll",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

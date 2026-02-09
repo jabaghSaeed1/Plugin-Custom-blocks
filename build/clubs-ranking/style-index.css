@@ -1,0 +1,93 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/clubs-ranking/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+.wp-block-create-block-clubs-ranking {
+  border-radius: 12px;
+  font-family: "Manrope", sans-serif;
+  color: #333639;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* 1. The Scroll Container */
+  /* This allows the table to slide left/right on small phones */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.wp-block-create-block-clubs-ranking .ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+}
+.wp-block-create-block-clubs-ranking .ranking-table th {
+  text-align: left;
+  font-size: 14px;
+  color: #888;
+  text-transform: uppercase;
+  padding: 12px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.wp-block-create-block-clubs-ranking .ranking-table td {
+  padding: 12px 8px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.wp-block-create-block-clubs-ranking .ranking-table tr:last-child td {
+  border-bottom: none;
+}
+.wp-block-create-block-clubs-ranking .ranking-table .col-club {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* Ensure the club name doesn't wrap to a second line */
+  white-space: nowrap;
+}
+.wp-block-create-block-clubs-ranking .ranking-table .col-club .rank-number {
+  font-weight: 800;
+  color: #aaa;
+  width: 20px;
+  flex-shrink: 0;
+}
+.wp-block-create-block-clubs-ranking .ranking-table .col-club .team-logo {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+.wp-block-create-block-clubs-ranking .ranking-table .col-club .team-name {
+  font-weight: 700;
+}
+.wp-block-create-block-clubs-ranking .ranking-table .col-stat {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  width: 40px;
+}
+.wp-block-create-block-clubs-ranking {
+  /* 2. Mobile Specific Adjustments */
+}
+@media (max-width: 600px) {
+  .wp-block-create-block-clubs-ranking .ranking-table th, .wp-block-create-block-clubs-ranking .ranking-table td {
+    padding: 10px 4px;
+    font-size: 12px;
+  }
+  .wp-block-create-block-clubs-ranking .ranking-table .col-club {
+    gap: 8px;
+  }
+  .wp-block-create-block-clubs-ranking .ranking-table .col-club .rank-number {
+    width: 15px;
+  }
+  .wp-block-create-block-clubs-ranking .ranking-table .col-club .team-logo {
+    width: 20px;
+    height: 20px;
+  }
+  .wp-block-create-block-clubs-ranking .ranking-table {
+    /* Optional: Hide less important columns on mobile to save space */
+  }
+  .wp-block-create-block-clubs-ranking .ranking-table .hide-mobile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

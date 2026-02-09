@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/editorial-search",
+	"version": "0.1.0",
+	"title": "Editorial Search",
+	"category": "widgets",
+	"icon": "search",
+	"description": "Sports news search with an overlay results dropdown.",
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"textdomain": "custom-design-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
